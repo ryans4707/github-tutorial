@@ -16,7 +16,13 @@ It is a way to  visually track the changes we make to the code.
 ## Initial Setup  
   To set up your github account  
   1. First sign up for github by going to https://github.com  
-  2. Then you goget the SSH key from your IDE and.
+  2. When you sign up, go to the top right of your screen to your profile icon.  
+  3. Go to settings, click _SHH_ keys on the left side bar.  
+  4. Go get the _SSH_ key from your IDE and copy and paste it into the key; *click add key.*  
+  5. Go back to https://c9.io and in the command line type in _shh -T git@github.com_; click enter  
+  6. Type yes.  
+    
+  
  
   
 
