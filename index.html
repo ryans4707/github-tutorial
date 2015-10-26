@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>GitHub-tutorial by ryans4707</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>GitHub-tutorial</h1>
+        <h2>Getting started with Github</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/ryans4707/github-tutorial/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/ryans4707/github-tutorial/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/ryans4707/github-tutorial" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="github-tutorial" class="anchor" href="#github-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub Tutorial</h1>
+
+<p><em>by <em>Ryan Santiago</em></em></p>
+
+<hr>
+
+<h1>
+<a id="git-vs-github" class="anchor" href="#git-vs-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git vs. GitHub</h1>
+
+<ul>
+<li><p><strong>Git</strong> is something that runs in the command line. It is version control,<br>
+which keeps "snapshots" of code. However, it does not require github.  </p></li>
+<li><p><strong>Github</strong> is the thing we use to store that code in the cloud.<br>
+It is a way to  visually track the changes we make to the code.</p></li>
+</ul>
+
+<hr>
+
+<h1>
+<a id="initial-setup" class="anchor" href="#initial-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Initial Setup</h1>
+
+<p>To set up your github account  </p>
+
+<ol>
+<li>First sign up for github by going to <a href="https://github.com">https://github.com</a><br>
+</li>
+<li>When you sign up, go to the top right of your screen to your profile icon.<br>
+</li>
+<li>Go to settings, click <em>SHH</em> keys on the left side bar.<br>
+</li>
+<li>Go get the <em>SSH</em> key from your IDE and copy and paste it into the key; <em>click add key.</em><br>
+</li>
+<li>Go back to <a href="https://c9.io">https://c9.io</a> and in the command line type in <em>shh -T <a href="mailto:git@github.com">git@github.com</a></em>; click enter<br>
+</li>
+<li>
+<p>Type yes. </p>
+
+<p><code>git config</code> is a one time set up so they know who to give credit for the changes that were made.</p>
+</li>
+</ol>
+
+<hr>
+
+<p># Repository Setup<br>
+ <code>init</code> initializes git in our directory(now called a repository)for version control --<br>
+ only do this once at the beginning<br>
+ ## <em>First Github repo</em><br>
+ In your command line inside workspace, type in the following:<br>
+ 1.mkdir first-repo<br>
+ 2.cd first-repo<br>
+ 3.pdw (to make sure you are in the right directoy)
+ 4.git init<br>
+ 5.git config --global user.name "First Last"<br>
+ 6.git config --global user.email "<a href="mailto:username@hstat.org">username@hstat.org</a>"<br>
+ 7.touch README.md<br>
+      Open the README &gt; This is my first repo<br>
+ 8.save, add<br>
+ 9.git commit -m "add readme"</p>
+
+<h3>
+<a id="make-your-remote-repo" class="anchor" href="#make-your-remote-repo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Make your Remote repo</h3>
+
+<ul>
+<li>github &gt; top right &gt; new repository<br>
+-Repository name : first-repo<br>
+-create repository<br>
+** MAKE SURE YOU HAVE SSH SELECTED**</li>
+<li>copy/paste the two lines that start with <code>git remote</code> and <code>git push</code> seperately into the command line.</li>
+</ul>
+
+<hr>
+
+<h1>
+<a id="workflow--commands" class="anchor" href="#workflow--commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>Workflow &amp; Commands</h1>
+
+<ul>
+<li>
+<code>git status</code> is used to see what has been modified or changed. <em>You should use this as much as possible</em>. You can use this anytime to see what has been changed and is simply typed as is.</li>
+<li>
+<code>git add</code> is used to start tracking new files and to stage your changes. You type this in the file in which the file you're trying to add is in.<br>
+This is typed as:  <code>git add (file you mad changes to)</code>
+</li>
+<li>
+<code>git commit</code> is used to record  your snapshots into your history. This is typed as:
+<code>git commit -m "commit message"</code>
+</li>
+<li>
+<code>git push</code> is used to send our commits from our local repo to our remote repo. This is typed as : <em><code>git push -u ("upstream") origin master</code></em>(origin is the remote we are pushing to)<br>
+(master is the main branch)</li>
+</ul>
+
+<hr>
+
+<h1>
+<a id="collaboration" class="anchor" href="#collaboration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Collaboration</h1>
+
+<ul>
+<li>cloning is making a copy from remote to local. For this, you have to type <code>git clone</code> <em>URL</em><br>
+</li>
+<li>To "fork" is creating a personal copy of someone else’s project. Forks are a connection between the original repository and your personal copy.<br>
+</li>
+<li>You can create a pull request to help make other people’s projects better.This is done by making your own chnages and suggesting them to the original project.<br>
+</li>
+<li> To pull is to bring any changes from the remote repo down to the local repo.</li>
+</ul>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
